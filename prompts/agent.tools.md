@@ -193,4 +193,30 @@ When writing own code, ALWAYS put print/log statements inside and at the end of 
         "code": "Y",
     }
 }
+
+### web_scraper:
+Scrapes the web page at the specified URL and extracts elements based on the provided tag or attribute.
+
+**Arguments**:
+- **url**: The URL of the web page to scrape.
+- **element**: The HTML element to search for (e.g., "div", "p").
+- **attribute**: An attribute to filter elements by (e.g., "class=example").
+
+**Example usage**:
+~~~json
+{
+    "thoughts": [
+        "The user has requested to scrape a web page for specific elements.",
+        "I will use the web_scraper tool to extract the necessary information.",
+    ],
+    "tool_name": "web_scraper",
+    "tool_args": {
+        "url": "https://example.com",
+        "element": "div",
+        "attribute": "class=example"
+    }
+}
+~~~
+
+
 ~~~
